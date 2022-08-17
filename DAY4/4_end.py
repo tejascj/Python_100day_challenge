@@ -51,7 +51,9 @@ print("Computer chose\n")
 print(lst2[comp_choice])
 
 # Decide who wins
-if user_choice==comp_choice:
+if user_choice>2 or user_choice<0 :
+    print("You typed invalid choice. You Loss!")
+elif user_choice==comp_choice:
     print("Draw!")
 elif user_choice==0 and comp_choice==2:
     print("you win!")
