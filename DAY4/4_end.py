@@ -43,21 +43,23 @@ else:
     print("Enter valid input")
 
 # add rock,paper,scissors to a list
-lst=[rock,paper,scissors]
+lst=[0,1,2]
+lst2=[rock,paper,scissors]
 # using random.choice select computer choice
 comp_choice=random.choice(lst)
 print("Computer chose\n")
-print(comp_choice)
+print(lst2[comp_choice])
 
 # Decide who wins
 if user_choice==comp_choice:
     print("Draw!")
-elif user_choice==1 and comp_choice==scissors:
-    print("you won!")
-elif user_choice==0 and comp_choice==scissors:
-    print("You Won!")
-elif user_choice==2 and comp_choice==paper:
-    print("You Won!")
-else:
-    print("You Lose. YOu typed an invalid number")
-
+elif user_choice==0 and comp_choice==2:
+    print("you win!")
+elif comp_choice>user_choice:
+    print("You Loss!")
+elif user_choice==1 and comp_choice==0:
+    print("You Win!")
+elif user_choice==2 and comp_choice==1:
+    print("YOu win!")
+elif user_choice==2 and comp_choice==0:
+    print("You Loss!")
