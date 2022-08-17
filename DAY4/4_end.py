@@ -41,6 +41,7 @@ elif user_choice==2:
     print(scissors)
 else:
     print("Enter valid input")
+    exit()
 
 # add rock,paper,scissors to a list
 lst=[0,1,2]
